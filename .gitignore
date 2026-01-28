@@ -1,0 +1,15 @@
+.godot/
+
+.import/
+
+# Exports
+export/
+build/
+*.exe
+*.pck
+*.wasm
+*.zip
+*.html
+
+.DS_Store
+Thumbs.db
