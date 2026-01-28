@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d21hjblkmrn37"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8omjl"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_70mlv"]
+resource_name = "Black"
+
+[sub_resource type="TextMesh" id="TextMesh_y5n30"]
+text = "THE IMPOSSIBLE GAME"
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_tsqsu"]
+specular_color = Color(0, 0, 0, 1)
+
+[node name="The Impossible Game" type="Node2D" unique_id=1875926574]
+
+[node name="Background" type="MeshInstance2D" parent="." unique_id=1915380056]
+position = Vector2(582.4155, 324.47568)
+scale = Vector2(-1206.8025, -705.2581)
+mesh = SubResource("BoxMesh_8omjl")
+
+[node name="Title" type="MeshInstance2D" parent="Background" unique_id=668933216]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_70mlv")
+position = Vector2(0.006782774, 0.379023)
+scale = Vector2(-0.52925664, 1.0870727)
+mesh = SubResource("TextMesh_y5n30")
+texture = SubResource("CanvasTexture_tsqsu")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1794476726]
+position = Vector2(577, 321)
